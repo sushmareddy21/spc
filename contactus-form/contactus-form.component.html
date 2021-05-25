@@ -1,0 +1,31 @@
+<div style="text-align: center;">
+    <p class="contactus-form-title">
+        Contact us
+    </p>
+    </div>
+  
+  <h4 class="text-center mb-3 ">Have any questions ? We'd Love to hear from you.</h4>
+  <div class="container">
+          <form #regForm="ngForm" (ngSubmit)="Registers(regForm)" novalidate>
+            <label for="fname"><b>First Name</b></label>
+            <input type="text" id="fname" name="firstname" required pattern="^[a-zA-Z]+$" #firstname="ngModel" placeholder="Your name.." ngModel>
+        
+            <label for="lname"><b>Last Name</b></label>
+            <input type="text" id="lname" name="lastname" required pattern="^[a-zA-Z]+$" #lastname="ngModel" placeholder="Your last name.."ngModel>
+        
+            <label for="country"><b>Country</b></label>
+            <select id="country" name="country">
+              <option value="india">India</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+        
+            <label for="subject"><b>Subject</b></label>
+            <textarea id="subject" name="subject" required pattern="^[a-zA-Z]+$" #subject="ngModel" placeholder="Write something.." style="height:200px" ngModel></textarea>
+        
+            <input type="submit" value="Submit">
+        
+          </form>
+        </div>
+  
+  

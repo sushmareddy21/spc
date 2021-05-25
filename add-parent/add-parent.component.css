@@ -1,0 +1,46 @@
+.parent-title{
+    font-family: 'Poppins', sans-serif; 
+    font-weight: bold; 
+    color: #123239; 
+    font-size: 50px;
+}
+
+
+button{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: white;
+    margin-left: 150px; 
+    width: 150px; 
+    border-radius: 15px;
+}
+
+.btn-primary{
+    background-color:blue;
+    margin-left:500px;
+    margin-right:200px;
+}
+
+input{
+    border: 1px solid #123985; 
+    border-radius: 20px;
+    padding:15px;
+} 
+form{
+    width: 80%;
+    border-radius: 30px;
+    background-color :#baedf8;
+    padding: 20px;
+    border: 1px solid rgb(250, 245, 245); 
+    margin-left: 11%;
+    margin-top: 2px;
+
+}
+.or-text{
+    font-family: 'Poppins'; 
+    font-size: 20px; 
+    font-weight: 500; 
+    margin-left: 380px;
+    margin-top: 15px;
+    margin-right: 160px;
+}
