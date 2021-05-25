@@ -1,0 +1,55 @@
+<div style="text-align: center;">
+  <p class="signup-title">
+      SIGN UP
+  </p>
+  </div>
+  <div class="container pt-3 pb-3 test" style="width: 50%; background-color: #ECECEC; border-radius: 25px; border: 2px solid #123985;">
+      <div class="row"></div>
+
+              <div class="container">
+                <h1>Register</h1>
+                <p>Please fill in this form to create an account.</p>
+                <hr>
+                
+
+
+          <form (submit)="signupUser(f.value)"  class="form-group" #f="ngForm">
+            <div class="form-floating mb-3"> 
+              <select id="role" name="role" class="selectpicker form-control" ngModel #roleselect required >
+                  <option value="Accountant">Accountant</option>
+                  <option value="Teacher">Teacher</option>
+                  <option value="Parent">Parent</option>
+              </select> 
+              <label for="role" ><b>Select Role</b></label> 
+            </div>
+            <!--div class="form-floating mb-3">
+              <input type="number" name="id" id="id" placeholder="ID"  ngModel 
+              class="form-control" required #uId="ngModel" [class.is-invalid]="uId.invalid && uId.touched" />
+              <label for="id">User ID</label>
+              <small *ngIf="uId.invalid && uId.touched" class="text-danger">ID is required</small>
+          </div-->
+          <div class="form-floating mb-3">
+            <input type="text" name="fname" id="fname" placeholder="Name"  ngModel 
+              class="form-control" required #uId="ngModel" [class.is-invalid]="uId.invalid && uId.touched" />
+            <label for="fname">Name</label>
+            <small *ngIf="uId.invalid && uId.touched" class="text-danger">Name is required</small>
+        </div>
+          <div class="form-floating mb-3">
+            <input type="password" name="password" id="password" placeholder="Password" ngModel
+            class="form-control" required #iPswd="ngModel" [class.is-invalid]="iPswd.invalid && iPswd.touched" />
+            <label for="password">Password</label>
+            <small *ngIf="iPswd.invalid && iPswd.touched" class="text-danger">Password is required</small>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="password" name="cnfpswd" id="cnfpswd" placeholder="Confirm Password" ngModel
+          class="form-control" required #uPswd="ngModel" [class.is-invalid]="uPswd.invalid && uPswd.touched" />
+          <label for="cnfpswd">Confirm Password</label>
+          <small *ngIf="uPswd.invalid && uPswd.touched" class="text-danger">Password is required</small>
+        </div>
+        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+        <button type="submit" class="registerbtn">Register</button>
+      <div class="container signin">
+        <p>Already have an account? <button class="btn login-btn" (click)="login()">Login</button>
+      </div>
+    </form>
+    </div>

@@ -1,0 +1,28 @@
+.navbar
+{
+    background-color:cornflowerblue;
+}
+.navbar-light .navbar-nav  .nav-link
+{
+    color: #000000;
+    font-size: 19px;
+    padding: 9px;
+
+}
+.navbar-light .navbar-nav  .nav-link:hover
+{
+    text-decoration:underline;
+}
+ footer{
+    background-color: lightblue;
+    min-height: 80px;
+}
+.topnav input[type=text]{
+    float:right;
+    padding:6px;
+    border:skyblue;
+    margin-top: 8px;
+    margin-left :410px;
+    font-size:17px;
+    background: whitesmoke;
+}
